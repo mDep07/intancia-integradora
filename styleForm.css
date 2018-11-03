@@ -150,4 +150,7 @@ textarea:focus, input:focus{
     width: 100vw;
     margin: 0;
   }
+  .contenedorMapa::before{
+    content: none;
+  }
 }

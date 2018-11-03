@@ -130,18 +130,6 @@ p{
     margin: 1%;
     }
 }
-@keyframes moverPortada {
-  0%{transform: translateX(0);}
-  10%{transform: translateX(0);}
-  100%{transform: translateX(-500px);}
-}
-@media screen and (max-width: 700px){
-  .carruselImg{
-    animation-name: moverPortada;
-    animation-duration: 6.5s;
-    animation-timing-function: ease-in-out;
-  }
-}
 
 /* ==============CONTENIDO */
 
@@ -328,7 +316,7 @@ p{
 }
 @media screen and (min-width: 300px) and (max-width: 1000px){
   .footer{
-    height: 50vh;
+    height: 80vh;
       flex-direction: column;
   }
   .seccion-1-Fooster{
@@ -366,6 +354,10 @@ p{
   .tituloContacto{
     margin: 0;
   }
+  .titulosSecciones{
+    width: 100vw;
+    letter-spacing: 0.3px;
+  }
 }
 /* Tablets */
 @media screen and (max-width: 800px) and (max-height: 400px){
@@ -379,12 +371,21 @@ p{
   body{
     width: 100vw;
   }
+  .titulosSecciones{
+    width: 100vw;
+    letter-spacing: 0.3px;
+    font-size: 1.5rem;
+    }
   .logo{
     width: 80%;
     height: auto;
   }
   .texto-carrusel{
     font-size: 250%;
+    text-align: center;
+  }
+  .carrusel, .carruselImg{
+    height: 100vh;
   }
   .parrafoCarrusel{
     font-size: 80%;
@@ -418,13 +419,15 @@ p{
   .cliente{
     padding: 0;
     flex-direction: column;
+    overflow: auto;
   }
   .tarjetaClientes{
-    width: 100vw;
+    width: 5rem;
     box-shadow: none;
   }
   .footer{
     flex-direction: column;
+    height: 100vh;
   }
   .seccion-1-Fooster{
     width: 100%;
