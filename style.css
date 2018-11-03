@@ -1,8 +1,11 @@
 *{
     margin: 0; padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
-  background-image: linear-gradient(90deg,#15001f,#66004b);
+  background-image: linear-gradient(90deg,#15001f,#660031);
 }
 .titulos{
   margin-top: .79em;
@@ -13,7 +16,7 @@ body{
   text-align: center;
 }
 .titulos-dos{
-  margin-top: .79em;
+  margin-top: 1.4em;
   color: #fff;
   padding: 1%;
   border-radius: .2em;
@@ -24,7 +27,7 @@ body{
 }
 .titulosSecciones{
   text-align: center;
-  color: rgb(255, 77, 221);
+  color: rgb(255, 99, 99);
   padding: 2%;
   background-color: rgb(31, 0, 25);
   letter-spacing: 10px;
@@ -125,9 +128,19 @@ p{
     color: white;
     text-align: center;
     margin: 1%;
+    }
 }
+@keyframes moverPortada {
+  0%{transform: translateX(0);}
+  20%{transform: translateX(0);}
+  100%{transform: translateX(-500px);}
 }
-
+@media screen and (max-width: 700px){
+  .carruselImg{
+    animation-name: moverPortada;
+    animation-duration: 6s;
+  }
+}
 
 /* ==============CONTENIDO */
 
