@@ -260,11 +260,16 @@ p{
 /* ==============FOOTER */
 .footer{
 
-    height: 40vh;
+    height: 45vh;
     padding: 2.5%;
     display: flex;
     flex-direction: row;
 
+}
+@media screen and (min-width: 300px) and (max-width: 350px){
+  .footer{
+    height: 80vh;
+  }
 }
 .linkRedes{
   text-decoration: none;
@@ -316,7 +321,7 @@ p{
 }
 @media screen and (min-width: 300px) and (max-width: 1000px){
   .footer{
-    height: 80vh;
+    height: 60vh;
       flex-direction: column;
   }
   .seccion-1-Fooster{
@@ -344,8 +349,6 @@ p{
   }
   .facebook , .twitter , .instagram , .whatsapp{
     padding: 2.5%;
-  }
-  .iconos{
   }
   /* #contacto > .titulos{
     padding: 0;
